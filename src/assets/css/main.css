@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap');
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	/* border: 1px solid; */
+}
+#app {
+    font-family: 'Lato', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #616770;
+    overflow: hidden;
+    /* position: relative !important; */
+    /* padding: 20px; */
+}
+  /***************************
+LAYOUT
+****************************/
+
+.flexed {
+	display: flex;
+}
+.kl{
+    background-color: #fff;
+    opacity: 0.95;
+}
+.spaced {
+	justify-content: space-between;
+}
+.start {
+	justify-content: flex-start;
+}
+.row1{
+    flex-wrap: wrap;
+}
+.col-70{
+    flex: 70%;
+  max-width: 70%;
+}
+.col-30{
+    flex: 30%;
+  max-width: 30%;
+}
+.col-40{
+    flex: 40%;
+  max-width: 40%;
+}
+.col-50{
+    flex: 50%;
+  max-width: 50%;
+}
+.col-60{
+    flex: 60%;
+  max-width: 60%;
+}
+.col-100{
+    flex: 100%;
+  max-width: 100%;
+}
+.centered {
+	align-items: center;
+}
+
+.centered--col {
+	justify-content: center;
+}
+
+.center {
+	text-align: center;
+}
+
+.wrapper {
+	width: 90%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.nav {
+    /* width: 100%; */
+    position: fixed;
+}
+
+.nav a {
+    font-weight: normal;
+    color: #616770;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.navbar-right{
+    padding: 8px 0;
+}
+
+.nav a.router-link-exact-active {
+    color: #0066F5;
+}
+.test{
+    padding: 20px;
+    width: 100%;
+    position:absolute !important;
+}
+.container1{
+    height: 100vh;
+}
+.container0{
+    height: 100vh;
+}
+
+@media screen and (max-width: 1000px) {
+    .container1{
+        height: 80vh;
+    }
+    .col,
+    .col-30,
+    .col-40,
+    .col-50,
+    .col-60,
+    .col-70 {
+        max-width: 100%;
+        flex: 100%;
+        text-align: center;
+    }
+    .sm{
+        display: none;
+    }
+    .test0,.test01{
+        width: 100%; 
+    }
+    .card-list {
+        /* On small screens, we are no longer using row direction but column */
+        flex-direction: column;
+      }
+}
+.icon-bar {
+    bottom: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.icon-bar a {
+    /* display: block; */
+    padding: 16px;
+    color: white;
+    font-size: 20px;
+}
